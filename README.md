@@ -1,5 +1,5 @@
 # uniWorks
-This account will involve all the code scripts I have done so far, 
+This account will involve most of the code scripts I have done so far, 
 which includes my university projects, individual projects and intern projects.
 
 The workload is heavy so it will take time to finish uploading and becoming descriptive.

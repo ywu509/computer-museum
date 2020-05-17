@@ -1,0 +1,85 @@
+<!doctype html>
+<meta charset=utf-8>
+
+<html>
+<head>
+   <title>Bob Doran Museum</title>
+   <script defer src="ywu509.js"></script>
+   <link rel="stylesheet" href="ywu509.css">
+</head>
+<body>
+   <nav>
+      <table style="width: 100%;">
+         <tr>
+			<td id="Logo"">
+               <img style="width: 70px;" alt="pic" src="http://redsox.uoa.auckland.ac.nz/ms/logo-192x192.png" />
+            </td>
+            <td id="Home" class="center" onclick="showHomeTab();">
+               &#x1F3E1
+            </td>
+            <td id="News" class="center" onclick="showNewsTab();getNews();">
+               &#x1F4F0
+            </td>
+            <td id="Displays" class="center" onclick="showDisplaysTab();getDisplays();">
+               &#x1F4BB
+            </td>
+            <td id="GuestBook" class="center" onclick="showGuestBookTab();">
+               &#x1F4DD
+            </td>
+         </tr>
+      </table>
+      <hr />
+      <hr />
+   </nav>
+   <div id="SectionA">
+      <section>
+	     <p id="titles">
+            HOME
+         </p>
+         <p>
+            Welcome to The Bob Doran Museum of Computing. You can learn more about the displays here. If you are intrigued by what you find here and live close to Auckland, or are visiting the city, please feel free to drop in to the school and see the displays for yourself. We are located at the University on Princes Street and are always open during normal office hours and also in the evenings and on the weekends when classes are in session.
+         </p>
+      </section>
+   </div>
+   <div id="SectionB">
+      <section>
+	     <p id="titles">
+			NEWS
+         </p>
+		 <table id="showUpNews"></table>
+      </section>
+   </div>
+   <div id="SectionC">
+      <section>
+	  	 <p id="titles">
+            DISPLAYS
+         </p>
+		 <label>Search:</label>
+			<input id="searchBar" placeholder="Type keyword here." onkeyup="search()"></input>
+         
+		 <table id="showUpDisplays"></table>
+	  </section>
+   </div>
+   <div id="SectionD">
+      <section>
+	  	 <p id="titles">
+            GUEST BOOKS
+         </p>
+         <p>
+			
+			<br/>
+			<label>Name:</label>
+			<textarea id="nameBox" rows="1" cols="10" placeholder="Enter name."></textarea><br/>
+			<label>Your comment:</label><br/>
+			<textarea id="commentBox" rows="5" cols="30" placeholder="Enter Comment."></textarea><br/>
+			<button onclick='postComments();reloadComments();'>
+				Post
+			</button><br/>
+			<label>All comments:</label><br/>
+			<iframe id="iframeComments" src="http://redsox.uoa.auckland.ac.nz/ms/MuseumService.svc/htmlcomments"></iframe>
+
+         </p>
+      </section>
+   </div>
+</body>
+</html>

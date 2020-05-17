@@ -1,0 +1,62 @@
+body{
+	background-color:  #edf2f8;
+}
+
+p,td,label{
+	font-family: verdana;
+	font-size: 80%;
+}
+
+#titles{
+	font-size: 150%;
+}
+
+a:link{
+	font-weight: bold;
+	text-decoration: none;
+	color: #11529e;
+}
+
+a:active{
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #91979e;
+	color: #11529e;
+
+}
+
+a:visited{
+	font-weight: bold;
+	text-decoration: none;
+	color: #11529e;
+}
+
+input,textarea{
+  background-color: #dae3e8;
+  border: 1px;
+}
+
+textarea:focus{
+  border: 3px solid #555;
+}
+
+input:focus{
+  border: 3px solid #555;
+
+}
+
+
+#displayTitle{
+	font-weight: bold;
+}
+
+button{
+	background-color: black;
+	color: white;
+}
+
+iframe{
+	border: none;
+	height: 500px;
+	width: 100%;
+}
